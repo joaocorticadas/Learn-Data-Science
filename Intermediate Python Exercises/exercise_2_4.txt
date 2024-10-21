@@ -1,0 +1,5 @@
+Exercise 2.4: Loops
+
+a) Given the list words = ['apple', 'banana', 'cherry', 'date', 'elderberry'], write a for loop that prints each word in the list along with its length in the format: "apple - 5".
+
+b) Given the list of numbers numbers = [10, 55, 75, 85, 95, 105, 115], use a while loop to find and print the first number in the list that is greater than 100.

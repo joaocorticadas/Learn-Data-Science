@@ -1,0 +1,163 @@
+# Solutions for Exercises 1 to 5
+
+# Import necessary libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# -------------------------------
+# Solution 1: Matplotlib
+# -------------------------------
+
+# Generate x values from -10 to 10
+x = np.arange(-10, 11)
+
+# Compute y values
+y = x ** 2
+
+# Create the plot
+plt.figure(figsize=(8, 6))
+plt.plot(x, y)
+
+# Label the axes
+plt.xlabel('x values')
+plt.ylabel('y values')
+
+# Title
+plt.title('Plot of y = x^2')
+
+# Show the plot
+plt.show()
+
+# -------------------------------
+# Solution 2: Dictionaries, Pandas, Filtering, loc, and iloc
+# -------------------------------
+
+# Given dictionary
+country_capitals = {
+    "Country": ["USA", "CA", "FR", "DE", "JP"],
+    "Name": ["United States", "Canada", "France", "Germany", "Japan"],
+    "Capital": ["Washington D.C.", "Ottawa", "Paris", "Berlin", "Tokyo"]
+}
+
+# Create DataFrame
+table = pd.DataFrame.from_dict(country_capitals)
+
+# Set 'Country' as the index
+table.set_index("Country", inplace=True)
+
+# Display the DataFrame
+print("Full DataFrame:")
+print(table)
+print("\n")
+
+# Filtering: Select all rows where the 'Capital' starts with 'B'
+capitals_start_with_B = table[table['Capital'].str.startswith('B')]
+
+print("Capitals starting with 'B':")
+print(capitals_start_with_B)
+print("\n")
+
+# Using .loc: Retrieve the row corresponding to 'DE'
+row_DE = table.loc['DE']
+
+print("Row corresponding to 'DE':")
+print(row_DE)
+print("\n")
+
+# Using .iloc: Retrieve the third row of the DataFrame
+third_row = table.iloc[2]
+
+print("Third row of the DataFrame:")
+print(third_row)
+print("\n")
+
+# -------------------------------
+# Solution 3: Logic, Control Flow, and Filtering
+# -------------------------------
+
+def filter_even_numbers(numbers_list):
+    even_numbers = []
+    for number in numbers_list:
+        if number % 2 == 0:
+            even_numbers.append(number)
+    return even_numbers
+
+# Example usage
+numbers_list = [1, 2, 3, 4, 5, 6]
+even_numbers = filter_even_numbers(numbers_list)
+print("Even numbers from the list:")
+print(even_numbers)
+print("\n")
+
+# -------------------------------
+# Solution 4: Loops
+# -------------------------------
+
+# a) For loop to print each word with its length
+words = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+
+print("Words and their lengths:")
+for word in words:
+    print(f"{word} - {len(word)}")
+print("\n")
+
+# b) While loop to find the first number greater than 100
+numbers = [10, 55, 75, 85, 95, 105, 115]
+index = 0
+
+while index < len(numbers):
+    if numbers[index] > 100:
+        print(f"The first number greater than 100 is: {numbers[index]}")
+        break
+    index += 1
+print("\n")
+
+# -------------------------------
+# Solution 5: Case Study - Hacker Statistics
+# -------------------------------
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Set seed for reproducibility
+np.random.seed(123)
+
+# Number of simulations
+num_simulations = 10000
+
+# Number of steps per simulation
+num_steps = 100
+
+# List to store the final positions
+final_positions = []
+
+# Simulate the random walks
+for i in range(num_simulations):
+    position = 0  # Starting position
+    for step in range(num_steps):
+        # Roll the die
+        dice = np.random.randint(1, 7)
+
+        if dice <= 2:
+            # Move down one step, but not below 0
+            position = max(0, position - 1)
+        elif dice <= 5:
+            # Move up one step
+            position += 1
+        else:
+            # Roll again and move up by the result
+            dice_again = np.random.randint(1, 7)
+            position += dice_again
+
+    # Record the final position
+    final_positions.append(position)
+
+# Plot histogram of final positions
+plt.figure(figsize=(10, 6))
+plt.hist(final_positions, bins=range(min(final_positions), max(final_positions) + 1), edgecolor='black')
+plt.xlabel('Final Position')
+plt.ylabel('Frequency')
+plt.title('Distribution of Final Positions after 100 Steps')
+plt.grid(axis='y', alpha=0.75)
+plt.show()

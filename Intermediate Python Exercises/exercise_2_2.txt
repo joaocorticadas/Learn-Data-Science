@@ -1,0 +1,17 @@
+Exercise 2.2: Dictionaries, Pandas, Filtering, loc, and iloc
+
+a) Using the following dictionary, create a Pandas DataFrame named table:
+
+country_capitals = {
+  "Country": ["USA", "CA", "FR", "DE", "JP"],
+  "Name": ["United States", "Canada", "France", "Germany", "Japan"],
+  "Capital": ["Washington D.C.", "Ottawa", "Paris", "Berlin", "Tokyo"]
+}
+
+Set the 'Country' column as the index.
+
+b) Filtering: Select all rows where the 'Capital' starts with the letter 'B'.
+
+c) Using .loc: Retrieve the row corresponding to the country code 'DE'.
+
+d) Using .iloc: Retrieve the third row of the DataFrame.

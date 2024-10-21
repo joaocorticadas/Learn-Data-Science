@@ -1,0 +1,11 @@
+property_id,location,type,price,square_feet,bedrooms,bathrooms,date_listed
+101,New York,Apartment,950000,850,2,2,2023-05-01
+102,Los Angeles,House,1200000,1800,3,2,2022-12-15
+103,Chicago,Apartment,750000,950,2,1,2023-01-20
+104,Miami,House,680000,1500,3,2,2023-03-30
+105,San Francisco,Apartment,1300000,700,1,1,2023-04-10
+106,Seattle,House,800000,2200,4,3,2023-02-28
+107,Houston,House,450000,1600,3,2,2023-07-15
+108,Boston,Apartment,700000,900,2,1,2023-06-05
+109,Dallas,House,500000,1900,3,2,2023-08-01
+110,Denver,House,950000,2100,4,3,2023-09-25

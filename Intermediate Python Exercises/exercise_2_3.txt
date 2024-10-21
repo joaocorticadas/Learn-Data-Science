@@ -1,0 +1,3 @@
+Exercise 2.3: Logic, Control Flow, and Filtering
+
+Write a function filter_even_numbers(numbers_list) that takes a list of integers numbers_list and returns a new list containing only the even numbers from the original list.

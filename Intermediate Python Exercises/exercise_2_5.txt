@@ -1,0 +1,18 @@
+Exercise 2.5: Case Study - Hacker Statistics
+
+Random Walk Simulation
+
+Simulate a random walk process:
+
+  •	Start at step 0.
+  •	You will take 100 steps.
+  •	At each step, simulate rolling a six-sided die.
+  •	If you roll a 1 or 2, you move down one step (but you cannot go below step 0).
+  •	If you roll a 3, 4, or 5, you move up one step.
+  •	If you roll a 6, you roll the die again and move up the number of steps equal to the result of the second roll.
+
+Tasks:
+
+  1.	Simulate this random walk process 10,000 times (i.e., 10,000 random walks), each consisting of 100 steps.
+  2.	Record the final position of each walk.
+  3.	Plot a histogram of the final positions.

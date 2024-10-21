@@ -1,0 +1,4 @@
+Exercise 2.1: Matplotlib
+
+Plot a line graph of the function  y = x^2  for x values ranging from -10 to 10. Label the x-axis as 'x values', the y-axis as 'y values', and give the plot the title 'Plot of y = x^2'.
+
