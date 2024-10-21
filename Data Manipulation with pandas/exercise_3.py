@@ -21,3 +21,5 @@ price_sort_des = real_estate.sort_values("price", ascending=False)
 print(price_sort_des)
 
 #Exercise 2.3
+price_square_sort = real_estate.sort_values(["price", "square_feet"], ascending=False)
+print(price_square_sort)
