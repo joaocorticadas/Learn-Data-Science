@@ -1,0 +1,29 @@
+Exercise 1: Load and Inspect the Data
+
+  1.	Load the real_estate.csv file into a Pandas DataFrame.
+  2.	Print the first five rows using .head().
+  3.	Print the summary information about the DataFrame using .info().
+  4.	Print the shape of the DataFrame using .shape.
+
+Exercise 2: Sorting the Data
+
+  1.	Sort the data by price in ascending order and print the result.
+  2.	Sort the data by price in descending order.
+  3.	Sort the data by price and square_feet in descending order.
+
+Exercise 3: Subsetting the Data
+
+  1.	Subset the data to show only the location, type, and price columns.
+  2.	Subset the rows to show only properties that have more than 1500 square feet.
+  3.	Subset the rows to show only properties of the type “House.”
+
+Exercise 4: Adding New Columns
+
+  1.	Add a new column called price_per_sqft, which is the price divided by the square feet.
+  2.	Add another column called price_in_million, which is the price in millions (e.g., 950000 becomes 0.95).
+
+Exercise 5: Filtering and Sorting Based on Conditions
+
+  1.	Filter the properties with price_per_sqft greater than 800.
+  2.	Sort these properties by price_in_million in descending order.
+  3.	Print the location, price_in_million, and price_per_sqft columns of the filtered properties.

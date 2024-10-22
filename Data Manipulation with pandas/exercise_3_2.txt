@@ -1,0 +1,10 @@
+Exercise 1: Load the CSV file into a DataFrame.
+Exercise 2: Calculate the average salary for each Experience_Level.
+Exercise 3: Find the company that offers the highest salary.
+Exercise 4: Count the number of job postings in each Industry.
+Exercise 5: Identify the most common Job_Title in the dataset.
+Exercise 6: Filter and display only the jobs in the Tech industry.
+Exercise 7: Create a pivot table showing the average salary by Location and Experience_Level.
+Exercise 8: Group by Company and calculate the total number of job postings and the average salary they offer.
+Exercise 9: Find the job that was posted most recently.
+Exercise 10: Create a cumulative sum of salaries and display it.
